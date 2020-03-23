@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- lab start -->
+	<!-- <typeAliases> <package name="org.zerock.domain" /> </typeAliases> -->
+
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+	</settings>
+
+	<typeAliases>
+		<typeAlias alias="Member" type="com.weduo.cafeinme.member.Member" />
+	</typeAliases>
+
+	<mappers>
+		<mapper resource="/mappers/memberDAO.xml" />
+	</mappers>
+
+	<!-- lab end -->
+</configuration>
+
