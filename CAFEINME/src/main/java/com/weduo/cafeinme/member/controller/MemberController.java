@@ -71,7 +71,14 @@ public class MemberController {
 		System.out.println("memberPW :" + mem.getMPW());
 		System.out.println("memberBIRTH :" + mem.getMBIRTH());
 
-		return "index";
+		return "/index";
+	}
+	
+	// logout
+	@RequestMapping("/logout")
+	public String logout(HttpSession session) {
+		session.invalidate();
+		return "/index";
 	}
 
 	// join Get
